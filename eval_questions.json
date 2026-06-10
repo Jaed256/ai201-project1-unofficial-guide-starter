@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Is the meal plan worth it for students who live on campus?",
+    "expected": "Often not worth it per student opinion: the dining hall is repetitive and students could save roughly $1,899-$2,099 if it weren't mandatory; only worthwhile if you can't budget or cook for yourself."
+  },
+  {
+    "question": "What dining options does the Biscayne Bay Campus have, and what is the main complaint?",
+    "expected": "Only four (Roary's Bay Cafe, Starbucks, Vicky's, Chick-fil-A) versus 35+ across all campuses; main complaints are limited hours, frequent food shortages, and high prices."
+  },
+  {
+    "question": "Where can students with gluten or kosher dietary restrictions eat on campus?",
+    "expected": "Limited options: 8th St. Kitchen only 'avoids' gluten without controlling cross-contamination, and the one consistent kosher option is Miro's food truck, which is closed on weekends."
+  },
+  {
+    "question": "What are some late-night food spots near FIU's main campus?",
+    "expected": "Night Owl (cookies, open until 2-3am) and Rancho Mateo (Colombian, open until 2am weekdays)."
+  },
+  {
+    "question": "How much does parking cost at FIU?",
+    "expected": "Out of scope: no collected document covers parking costs, so the system should refuse and say it doesn't have enough information."
+  }
+]

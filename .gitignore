@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+data/chroma_db/
+eval_results.json
+
+# Personal helper files — not part of the submission
+START_HERE.md
+SUBMIT_AND_RECORD.md
+VIDEO_SCRIPT.md
