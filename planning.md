@@ -36,6 +36,10 @@ self-contained thought — one venue, one complaint, one price list. Fixed 500-c
 would slice a venue's hours away from its name. A whole-article chunk would merge 10 venues
 into one blob and dilute retrieval. Paragraph chunks keep "complete, retrievable thoughts."
 
+Overlap: 0 characters. Since I split on paragraph boundaries, chunks already end at natural
+breaks, so there's no mid-sentence cut for overlap to protect against. I'd only add overlap
+(~10–15%) if I moved to fixed-character chunking.
+
 A bad chunk here would be a fragment like "2. specialTEA Lounge and Café" with the hours and
 price cut off into the next chunk — unanswerable on its own — or a blob that merges several
 unrelated venues so no single query matches it cleanly.

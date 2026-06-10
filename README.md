@@ -44,6 +44,13 @@ thought — one venue with its hours and prices, or one complaint. Fixed-charact
 would cut a venue's name away from its hours; one-chunk-per-article would merge 10+ venues and
 dilute retrieval.
 
+**Overlap: none (0 characters).** Overlap exists to avoid losing meaning at an arbitrary cut
+point, but because I split on paragraph boundaries rather than a fixed character count, each
+chunk already ends at a natural break and stays a complete thought — so there's no half-sentence
+straddling two chunks for overlap to rescue. Adding overlap here would mostly duplicate whole
+paragraphs and inflate the index without improving retrieval. (If I switched to fixed-character
+chunking, I'd add ~10–15% overlap to compensate.)
+
 A bad chunk here would be something like a lone fragment — `"2. specialTEA Lounge and Café"` —
 with the hours and prices sliced off into the next chunk, so it can't answer anything on its
 own; or a 600-character blob that mashes three unrelated venues together so no single query
@@ -157,8 +164,8 @@ documents. A real transcript (from the Gradio UI):
 
 ## Evaluation Report
 
-Five test questions in `eval_questions.json`, run via `eval.py`. **[CONFIRM the judgments in
-your own words — they're yours to defend in the video.]** My judgments based on the real run:
+Five test questions in `eval_questions.json`, run via `eval.py`. Accuracy judgments based on the
+real run:
 
 | # | Question | Expected (short) | System response (real) | Judgment |
 |---|----------|------------------|------------------------|----------|
