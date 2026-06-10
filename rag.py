@@ -20,8 +20,8 @@ except ImportError:
     pass
 
 BASE = Path(__file__).parent
-CHUNKS_PATH = BASE / "data" / "chunks.json"
-DB_PATH = os.environ.get("CHROMA_DB_PATH", str(BASE / "data" / "chroma_db"))
+CHUNKS_PATH = BASE / "chunks.json"
+DB_PATH = os.environ.get("CHROMA_DB_PATH", str(BASE / "chroma_db"))
 COLLECTION = "fiu_dining"
 EMBED_MODEL = "all-MiniLM-L6-v2"
 TOP_K = 4

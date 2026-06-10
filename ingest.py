@@ -1,7 +1,7 @@
 """Document ingestion + chunking pipeline for The Unofficial Guide (FIU campus dining).
 
 Implements the spec in planning.md:
-- Load raw .txt documents from data/raw/ (each has a metadata header: SOURCE/URL/TITLE/AUTHOR/DATE)
+- Load raw .txt documents from documents/ (each has a metadata header: SOURCE/URL/TITLE/AUTHOR/DATE)
 - Clean: strip metadata header into structured metadata, normalize whitespace
 - Chunk: paragraph-based, merging small paragraphs up to a target size of 500-800 chars
 - Output: chunks.json with text + metadata (source file, title, URL, chunk index)
@@ -12,8 +12,8 @@ import json
 import re
 from pathlib import Path
 
-RAW_DIR = Path(__file__).parent / "data" / "raw"
-OUT_PATH = Path(__file__).parent / "data" / "chunks.json"
+RAW_DIR = Path(__file__).parent / "documents"
+OUT_PATH = Path(__file__).parent / "chunks.json"
 
 MIN_CHUNK = 200   # merge paragraphs until at least this size
 MAX_CHUNK = 800   # split/flush before exceeding this

@@ -1,10 +1,28 @@
+# API keys — never commit these
 .env
-.venv/
+
+# Python
 __pycache__/
-data/chroma_db/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ChromaDB local storage
+chroma_db/
+chroma/
+
+# macOS
+.DS_Store
+
+# Generated at runtime
 eval_results.json
 
-# Personal helper files — not part of the submission
+# Personal helper notes — not part of the submission
 START_HERE.md
 SUBMIT_AND_RECORD.md
 VIDEO_SCRIPT.md
