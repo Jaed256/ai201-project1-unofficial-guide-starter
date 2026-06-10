@@ -163,7 +163,7 @@ Five test questions from `planning.md`, run through the system via `eval.py`.
 
 ## Failure Case Analysis
 
-**Question that failed:** "What are some late-night food spots near campus?" (Q4)
+**Question that failed:** "What are some late-night food spots near FIU's main campus?" (Q4)
 
 **What the system returned:** Rancho Mateo (open to 2am) and 107 Taste FIU — but it **missed
 Night Owl**, the strongest late-night answer (cookies, open to 2–3am).
